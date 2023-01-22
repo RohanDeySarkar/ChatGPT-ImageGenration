@@ -6,8 +6,9 @@ import {Configuration, OpenAIApi} from "openai";
 function App() {
   const [textInput, setTextInput] = useState("");
   const [imageUrl, setImageUrl] = useState("https://images.nightcafe.studio/jobs/EpwkmGxNLBBCxrmEZrwt/EpwkmGxNLBBCxrmEZrwt--150--1KCOL.jpg?tr=w-1600,c-at_max");
+  
   const configuration = new Configuration({
-    apiKey: import.meta.env.VITE_OPENAI_API_KEY,
+    apiKey: "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",
   });
 
   const openai = new OpenAIApi(configuration);
